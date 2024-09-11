@@ -15,14 +15,12 @@ cd book-management
 npm start
 Passo 2: Instalar o Bootstrap
 Para instalar o Bootstrap, execute o seguinte comando no terminal:
-
 bash
-Copiar código
 npm install bootstrap
 Depois, adicione o import no arquivo src/index.js para carregar os estilos do Bootstrap:
 
 javascript
-Copiar código
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 Salve o arquivo e o Bootstrap estará disponível no seu projeto.
 
@@ -30,7 +28,7 @@ Passo 3: Criar a Home Page
 Crie um componente simples para a Home Page, que dá boas-vindas:
 
 javascript
-Copiar código
+
 // src/components/HomePage.js
 import React from 'react';
 import { Container } from 'react-bootstrap';
@@ -49,7 +47,7 @@ Passo 4: Listar Livros
 Crie um componente para listar os livros. Você pode usar um array mock para simular os dados por enquanto:
 
 javascript
-Copiar código
+
 // src/components/BookList.js
 import React, { useState } from 'react';
 import { Table, Button } from 'react-bootstrap';
@@ -99,7 +97,7 @@ Passo 5: Adicionar Novo Livro
 Use um modal para adicionar um novo livro:
 
 javascript
-Copiar código
+
 // src/components/AddBookModal.js
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
@@ -154,7 +152,7 @@ Passo 6: Integrar Tudo
 No seu App.js, organize as rotas e os componentes:
 
 javascript
-Copiar código
+
 // src/App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -196,7 +194,7 @@ Passo 7: Instruções no README.md
 No seu arquivo README.md, inclua as instruções para instalar e rodar o projeto localmente:
 
 markdown
-Copiar código
+
 # Book Management App
 
 ## Como rodar o projeto localmente
@@ -208,28 +206,28 @@ Copiar código
 Entre na pasta do projeto:
 
 bash
-Copiar código
+
 cd book-management
 Instale as dependências:
 
 bash
-Copiar código
+
 npm install
 Inicie o servidor de desenvolvimento:
 
 bash
-Copiar código
+
 npm start
 Adaptação para Consumir API (Opcional)
 Instale o Axios:
 
 bash
-Copiar código
+
 npm install axios
 No componente BookList, substitua os dados estáticos pela chamada à API:
 
 javascript
-Copiar código
+
 useEffect(() => {
   axios.get('http://url-da-api/books')
     .then(response => {
@@ -242,7 +240,7 @@ useEffect(() => {
 Para adicionar um novo livro, envie os dados para a API usando um POST:
 
 javascript
-Copiar código
+
 const handleSubmit = () => {
   axios.post('http://url-da-api/books', newBook)
     .then(response => {
