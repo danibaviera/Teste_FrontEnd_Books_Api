@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Biblioteca de Livros</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f53ed9;
+            color: #d308f2;
+        }
+
+        header {
+            background-color: #080000;
+            color: #f53ed9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-list h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .book-item {
+            background-color: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .book-author {
+            color: #555;
+            font-style: italic;
+        }
+
+        .book-actions button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-actions button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Biblioteca</h1>
+    </header>
+
+    <main class="container my-5">
+        <section class="book-list">
+            <h2>Livros Disponíveis</h2>
+
+            <div class="book-item row align-items-center">
+                <div class="col-md-8">
+                    <span class="book-title">Livro 1</span>
+                    <br>
+                    <span class="book-author">Autor xx</span>
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="btn btn-primary mr-2">Editar</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+
+            <div class="book-item row align-items-center">
+                <div class="col-md-8">
+                    <span class="book-title">Livro 2</span>
+                    <br>
+                    <span class="book-author">Autor xxx</span>
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="btn btn-primary mr-2">Editar</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+
+            <div class="book-item row align-items-center">
+                <div class="col-md-8">
+                    <span class="book-title">Livro 3</span>
+                    <br>
+                    <span class="book-author">Autor xxxy</span>
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="btn btn-primary mr-2">Editar</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Biblioteca de Livros &copy; 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
